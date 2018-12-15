@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "autoprefixer": "^9.4.2",
+    "bootstrap": "^4.1.3",
+    "css-loader": "^2.0.1",
+    "exports-loader": "^0.7.0",
+    "file-loader": "^2.0.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.14.6",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "name": "ripple",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gema",
+  "license": "ISC",
+  "description": "Test from bullseye company",
+  "main": "webpack.config.js"
+}
