@@ -31,14 +31,19 @@
   font-style: normal;
 }
 
-h1 {
-  font-family: 'Bailey MF', Arial;
+p {
+  font-size: 12px;
 }
 
-h2 {
-  font-family: 'League Gothic', Arial;
+.text-yellow {
+  @include font-source($name: 'Segoe UI', $size: 14px, $colour: #FFB548);
 }
 
-h3 {
-  font-family: 'Arberkley', Arial;
+.text-warning {
+  color: #FFB548 !important;
+}
+
+.blue-link {
+  color: #2196f3;
+  font-size: 14px;
 }

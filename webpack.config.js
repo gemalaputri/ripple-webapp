@@ -55,6 +55,10 @@ module.exports = {
           'file-loader'
         ]
       },
+      {
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: "file-loader",
+      }
     ]
   }
 };

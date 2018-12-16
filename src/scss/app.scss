@@ -4,6 +4,9 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
+@import "./mixins.scss";
 @import "./typography.scss";
 @import "./variables.scss";
+@import "./navigation.scss";
 @import "./button.scss";
+@import "./custom.scss";

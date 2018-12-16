@@ -1,0 +1,54 @@
+.custom-carousel {
+  &.carousel-indicators {
+    justify-content: flex-end;
+    margin-right: 2.2%;
+    li {
+      width: 11px;
+      height: 11px;
+      margin-right: 1px;
+      background-color: transparent;
+      border: 1.5px solid rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+.showcase__title {
+  @include font-source($name: 'League Gothic', $size: 31px);
+}
+
+.border-dots {
+  background: url('../img/divider.png') repeat-x;
+  width: 100%;
+  height: 12px;
+}
+
+.form-mail {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  background: #ffffff url('../img/envelope.png') no-repeat 8px 6px;
+  padding: 0 40px 6px 10px;
+  height: calc(2.95rem + 2px);
+  background-position: right 10px bottom 11px;
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 0.2);
+    opacity: 1; /* Firefox */
+    font-size: 12px;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+  }
+}
+
+.ellipsis-rows {
+  @include ellipsis(245px);
+}
