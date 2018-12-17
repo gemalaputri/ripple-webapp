@@ -3,3 +3,4 @@ yarn.lock
 .cache-loader
 .DS_Store
 .DS_Store?
+/src/public
