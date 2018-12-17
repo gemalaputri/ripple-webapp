@@ -1,0 +1,97 @@
+<head><link href="styles/main.bundle.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Can't resolve '/Users/gema/Work/ripple/resources' in '/Users/gema/Work/ripple':
+  Error: Can't resolve '/Users/gema/Work/ripple/resources' in '/Users/gema/Work/ripple'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [ripple]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:298 Compiler.<anonymous>
+    [ripple]/[webpack]/lib/Compiler.js:298:10
+  
+  - Compiler.js:516 
+    [ripple]/[webpack]/lib/Compiler.js:516:13
+  
+  - Tapable.js:202 next
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:202:11
+  
+  - CachePlugin.js:62 Compiler.<anonymous>
+    [ripple]/[webpack]/lib/CachePlugin.js:62:5
+  
+  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compiler.js:513 
+    [ripple]/[webpack]/lib/Compiler.js:513:10
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:653 self.applyPluginsAsync.err
+    [ripple]/[webpack]/lib/Compilation.js:653:19
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:644 self.applyPluginsAsync.err
+    [ripple]/[webpack]/lib/Compilation.js:644:11
+  
+  - Tapable.js:202 next
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:202:11
+  
+  - index.js:244 Compilation.<anonymous>
+    [ripple]/[uglifyjs-webpack-plugin]/dist/index.js:244:6
+  
+  - Tapable.js:206 Compilation.applyPluginsAsyncSeries
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compilation.js:639 self.applyPluginsAsync.err
+    [ripple]/[webpack]/lib/Compilation.js:639:10
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:635 sealPart2
+    [ripple]/[webpack]/lib/Compilation.js:635:9
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:578 Compilation.seal
+    [ripple]/[webpack]/lib/Compilation.js:578:8
+  
+  - Compiler.js:510 
+    [ripple]/[webpack]/lib/Compiler.js:510:16
+  
+  - Tapable.js:289 
+    [ripple]/[webpack]/[tapable]/lib/Tapable.js:289:11
+  
+  - Compilation.js:480 _addModuleChain
+    [ripple]/[webpack]/lib/Compilation.js:480:11
+  
+  - Compilation.js:369 Compilation.errorAndCallback
+    [ripple]/[webpack]/lib/Compilation.js:369:4
+  
+  - Compilation.js:390 moduleFactory.create
+    [ripple]/[webpack]/lib/Compilation.js:390:12
+  
+  - NormalModuleFactory.js:247 factory
+    [ripple]/[webpack]/lib/NormalModuleFactory.js:247:20
+  
+  - NormalModuleFactory.js:65 resolver
+    [ripple]/[webpack]/lib/NormalModuleFactory.js:65:21
+  
+  - NormalModuleFactory.js:138 asyncLib.parallel
+    [ripple]/[webpack]/lib/NormalModuleFactory.js:138:21
+  
+  - async.js:3888 
+    [ripple]/[webpack]/[async]/dist/async.js:3888:9
+  
+  - async.js:473 
+    [ripple]/[webpack]/[async]/dist/async.js:473:16
+  
+  - async.js:1062 iteratorCallback
+    [ripple]/[webpack]/[async]/dist/async.js:1062:13
+  
+</pre><script type="text/javascript" src="bundle.js"></script>

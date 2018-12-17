@@ -1,53 +1,27 @@
-const path = require('path');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
   entry: './src/js/app.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, 'src', 'public'),
+    publicPath: "",
     filename: 'bundle.js',
   },
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
-        use: [
-          {
-            // Adds CSS to the DOM by injecting a `<style>` tag
-            loader: 'style-loader'
-          },
-          {
-            // Interprets `@import` and `url()` like `import/require()` and will resolve them
-            loader: 'css-loader'
-          },
-          {
-            // Loader for webpack to process CSS with PostCSS
-            loader: 'postcss-loader',
-            options: {
-              plugins: function () {
-                return [
-                  require('autoprefixer')
-                ];
-              }
-            }
-          },
-          {
-            // Loads a SASS/SCSS file and compiles it to CSS
-            loader: 'sass-loader'
-          }
-        ]
-      },
+				test: /\.scss$/,
+				loader: ExtractTextPlugin.extract({ use: 'css-loader!sass-loader' })
+			},
+			{
+				test: /\.css$/,
+				loader: ExtractTextPlugin.extract({ use: 'css-loader' })
+			},
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 10000,
-              mimetype: 'application/font-woff'
-            }
-          }
-        ]
+        loader: 'file-loader'
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -56,9 +30,21 @@ module.exports = {
         ]
       },
       {
-        test: /\.(gif|svg|jpg|png)$/,
-        loader: "file-loader",
-      }
+				test: /\.jpe?g$|\.gif$|\.png$/i,
+				loader:'file-loader'
+			},
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      filename: 'index.html',
+      template: './src/views/index.html',
+    }),
+    new ExtractTextPlugin('styles/[name].bundle.css')
+  ]
 };
